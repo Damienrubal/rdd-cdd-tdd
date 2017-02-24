@@ -8,9 +8,18 @@ module.exports = (opts, callback) => {
 
 	let query;
 
+
+/**
+ * To make query
+ * 
+ * @param {string} opts[0] - City.
+ * @param {string} opts[1] - Country.
+ */
 	if (_.isEmpty(opts)) {
 		query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="Dhaka, Bangladesh")');
 	} else {
+
+
 		query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + opts[0] + ', ' + opts[1] + '")');
 	}
 
