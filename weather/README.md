@@ -13,7 +13,7 @@
 
  # What is the aim ?
 
-	Give you the temperature and the climatic condition in the city you want 
+	Give you the temperature and the climatic condition in any city you want 
 
 
 
@@ -32,8 +32,8 @@
 node cli.js [City][Country][C/F]
 
 #Example 
-![alt tag](img/Capture1.png)
-![alt tag](img/Capture2.png)
+![alt tag](img/Capture1.PNG)
+![alt tag](img/Capture2.PNG)
 
 
 
